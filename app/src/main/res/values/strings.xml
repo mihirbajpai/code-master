@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Code Master</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_text_to_embed_in_qr_code">Add text to embed in QR Code</string>
+</resources>

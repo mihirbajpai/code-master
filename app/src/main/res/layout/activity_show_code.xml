@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowCodeActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/codeImage"
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginRight="@dimen/_60sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:background="@drawable/qr_round_button_background"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:src="@drawable/save"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:background="@drawable/qr_round_button_background"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:src="@drawable/share"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

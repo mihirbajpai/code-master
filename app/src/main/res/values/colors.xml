@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="create">#1194AA</color>
+    <color name="bar">#C9379D</color>
+    <color name="qr">#AE7E0F</color>
+    <color name="create_20">#331194AA</color>
+    <color name="bar_20">#33C9379D</color>
+    <color name="qr_20">#33AE7E0F</color>
+    <color name="yellow">#ffa500</color>
+</resources>

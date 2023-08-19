@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bar"
+    tools:context=".BarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="200dp">>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/barGenerateText"
+            android:hint="Add text to embed in Bar Code"
+            android:padding="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            android:background="@drawable/round_background_bar_201"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/barGenerateButton"
+            android:background="@drawable/bar_button_background"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_marginRight="@dimen/_70sdp"
+            android:text="Generate Bar Code"
+            android:textAllCaps="false"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</FrameLayout>

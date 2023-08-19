@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/create"
+    tools:context=".ScanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scan"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/scan_button_background"
+            android:textAllCaps="false"
+            android:src="@drawable/save"
+            android:text="Scan QR/Bar Code"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+</FrameLayout>

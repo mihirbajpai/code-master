@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qr"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar"/>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:paddingBottom="15sp"
+        android:paddingTop="15sp"
+        android:elevation="10sp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:id="@+id/qrLayout"
+            android:background="@drawable/round_background_qr_20"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/qrImage"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/qrcode_select"/>
+
+            <TextView
+                android:id="@+id/qrText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QR Code"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/qr"
+                android:layout_marginStart="10dp"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/scanLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/scanImage"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/scan"/>
+
+            <TextView
+                android:id="@+id/scanText"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/create"
+                android:layout_marginStart="10dp"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:id="@+id/barLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/barImage"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/barcode"/>
+
+            <TextView
+                android:id="@+id/barText"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bar Code"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/bar"
+                android:layout_marginStart="10dp"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
